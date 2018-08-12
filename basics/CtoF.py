@@ -15,6 +15,11 @@ def fahrenheitToCelsius(fahrenheit,coef=.56):
 
 #print(celsiusToFahrenheit(31))
 #print(fahrenheitToCelsius(90))
-temperatures=[10,-20,-289,100]
-for c in temperatures:
-    print(celsiusToFahrenheit(c))
+temperatures=[10,-20,-289,100,32]
+def Writer(temperature,filepath,coef=1.8):
+    with open(filepath,"w") as file:
+        for c in temperatures:
+            if c > -273.15:
+                file.write(str(round(c*coef+32,2))+"\n")
+
+Writer(temperatures,"temperature.txt")

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "C:\Users\vsankar\Desktop\PY\dbug.py", line 18, in <module>
+    box('$', 30, 1)
+  File "C:\Users\vsankar\Desktop\PY\dbug.py", line 9, in box
+    raise Exception('height and width should be gretar than 2')
+Exception: height and width should be gretar than 2

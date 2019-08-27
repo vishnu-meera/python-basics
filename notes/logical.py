@@ -1,0 +1,5 @@
+print('abc'=='abc')
+print('abc'=='ABC')
+print(2==2.000000000000001)
+print(not(2=='2'))
+print((2==2)and(2=='2'))
